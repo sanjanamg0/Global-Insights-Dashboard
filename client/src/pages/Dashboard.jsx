@@ -47,7 +47,7 @@ export default function Dashboard() {
   // Fetch Data
   useEffect(() => {
     setLoading(true);
-    axios.get("http://localhost:5000/api/insights")
+    axios.get("https://global-insights-dashboard-backned.onrender.com")
       .then(res => {
         setData(res.data);
         setError(null);
