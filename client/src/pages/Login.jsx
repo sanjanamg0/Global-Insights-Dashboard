@@ -5,7 +5,7 @@ import animationData from "../assets/login-animation.json";
 import * as Components from "../auth/Components";
 
 // Make sure this points to your login.css file!
-import "./login.css"; 
+import "./Login.css"; 
 
 export default function Login({ setIsAuth }) {
   const [isSignIn, setIsSignIn] = useState(true);
