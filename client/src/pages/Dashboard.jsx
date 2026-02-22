@@ -47,7 +47,7 @@ export default function Dashboard() {
   // Fetch Data
   useEffect(() => {
     setLoading(true);
-    axios.get("https://global-insights-dashboard-backned.onrender.com")
+    axios.get("https://global-insights-dashboard-backned.onrender.com/api/insights")
       .then(res => {
         setData(res.data);
         setError(null);
