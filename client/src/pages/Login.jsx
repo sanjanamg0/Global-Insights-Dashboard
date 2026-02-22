@@ -26,7 +26,7 @@ export default function Login({ setIsAuth }) {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://global-insights-dashboard-backned.onrender.com/api/auth/login",
         loginData
       );
       localStorage.setItem("token", res.data.token);
@@ -47,7 +47,7 @@ export default function Login({ setIsAuth }) {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://global-insights-dashboard-backned.onrender.com/api/auth/register",
         registerData
       );
       alert("Account created! Please sign in.");
