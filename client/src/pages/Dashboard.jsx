@@ -9,7 +9,7 @@ import {
   CountryBarChart, 
   RegionBarChart, 
   MetricsRadarChart 
-} from "../components/charts"; 
+} from "../components/Charts"; 
 
 // Styles
 import "../styles/dashboard.css";
